@@ -8,7 +8,7 @@ In our goal to bypass the AV, we will find two main approaches to delivering th
 
 A stageless payload embeds the final shellcode directly into itself. Think of it as a packaged app that executes the shellcode in a single-step process. In previous tasks, we embedded an executable that embedded a simple **`calc`** shellcode, making a stageless payload.
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/cad28e045fd6fec615b04d731aef7f9a.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/cad28e045fd6fec615b04d731aef7f9a.png)
+<img src="images/t6_1.png">
 
 In the example above, when the user executes the malicious payload, the embedded shellcode will run, providing a reverse shell to the attacker.
 
@@ -18,11 +18,11 @@ Staged payloads work by using intermediary shellcodes that act as steps leading 
 
 While there might be payloads with several stages, the usual case involves having a two-stage payload where the first stage, which we'll call **stage0**, is a stub shellcode that will connect back to the attacker's machine to download the final shellcode to be executed.
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/f92f294a9e599967a0961b4273381be6.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/f92f294a9e599967a0961b4273381be6.png)
+<img src="images/t6_2.png">
 
 Once retrieved, the stage0 stub will inject the final shellcode somewhere in the memory of the payload's process and execute it (as shown below).
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/fd8a98b3cb79cca98a1e0dfd0292ea61.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/fd8a98b3cb79cca98a1e0dfd0292ea61.png)
+<img src="images/t6_3.png">
 
 # Staged vs. Stageless
 

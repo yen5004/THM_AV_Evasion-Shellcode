@@ -107,7 +107,6 @@ You can ignore the questions for this task for now, but be sure to come back to 
 
 Deploy the attached VM to follow up with the content of the room before continuing to the next section! The VM will deploy in-browser and should appear automatically in the Split View. In case the VM is not visible, use the blue Show Split View button at the top-right of the page. If you prefer connecting via RDP, you can do so with the following credentials:
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/94fe3c0f556877a2721ca9e0744ad026.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/94fe3c0f556877a2721ca9e0744ad026.png)
 
 | Username | thm |
 | --- | --- |

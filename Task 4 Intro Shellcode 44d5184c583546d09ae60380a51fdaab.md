@@ -2,7 +2,8 @@
 
 Task 4 Introduction to Shellcode
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/7d8572294a70c545705aecc6c2453a3e.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/7d8572294a70c545705aecc6c2453a3e.png)
+<img src="images/4_1.png">
+
 
 Shellcode is a set of crafted machine code instructions that tell the vulnerable program to run additional functions and, in most cases, provide access to a system shell or create a reverse command shell.
 

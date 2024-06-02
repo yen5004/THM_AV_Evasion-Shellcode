@@ -22,7 +22,7 @@ LINKS:
 
 [https://tryhackme.com/room/runtimedetectionevasion](https://tryhackme.com/room/runtimedetectionevasion)
 
-CHAT GPT:
+
 abf766d3dc25eeac73e3dc9d0ad40e6e  ted
 
 0387265c30efa8ffca059d2ccfd36601  ted.asm
@@ -101,9 +101,7 @@ Points to remember:
 - The website supports EXE files only.
 - Once the AV scans the uploaded file and no malicious code is detected, the file gets executed. Thus, if everything is put together correctly, then you should receive a reverse shell.
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/7a5c9d8d5501eaed9d0b677d94266414.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/7a5c9d8d5501eaed9d0b677d94266414.png)
-!https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/7a5c9d8d5501eaed9d0b677d94266414.png
-https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/7a5c9d8d5501eaed9d0b677d94266414.png
+<img src="images/t2_1.png">
 
 You can ignore the questions for this task for now, but be sure to come back to them once you have successfully bypassed the AV and gained a shell.
 

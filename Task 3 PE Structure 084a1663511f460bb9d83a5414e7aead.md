@@ -10,7 +10,7 @@ In general, the default file structure of Windows binaries, such as EXE, DLL, a
 
 A PE structure contains various sections that hold information about the binary, such as metadata and links to a memory address of external libraries. One of these sections is the **PE Header**, which contains metadata information, pointers, and links to address sections in memory. Another section is the **Data section**, which includes ****containers that include the information required for the Windows loader to run a program, such as the executable code, resources, links to libraries, data variables, etc.
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/ad61ff4aa1d4f649c02348dfa32eb613.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/ad61ff4aa1d4f649c02348dfa32eb613.png)
+<img src="images/t3_1.png">
 
 There are different types of data containers in the PE structure, each holding different data.
 
@@ -62,11 +62,13 @@ We can control in which Data section to store our shellcode by how we define and
 
 The attached VM is a Windows development machine that has the tools needed to parse EXE files and read the details we discussed. For your convenience, we have provided a copy of the PE-Bear software on the Desktop, which helps to check the PE structure: Headers, Sections, etc. PE-Bear provides a graphic user interface to show all relevant EXE details. To load an EXE file for analysis, select **File** -> **Load PEs** (Ctrl + O).
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/c51856efd63b36680857498bac814469.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/c51856efd63b36680857498bac814469.png)
+<img src="images/t3_2.png">
 
 Once a file is loaded, we can see all PE details. The following screenshot shows PE details of the loaded file, including the headers and sections we discussed earlier in this task.
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/78dca06d1d1e4249f25734af8082b8be.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/78dca06d1d1e4249f25734af8082b8be.png)
+
+<img src="images/t3_3.png">
+
 
 Now it is time to try it out! Load the **thm-intro2PE.exe** file to answer the questions below. The file is located in the following location: **`c:\Tools\PE files\thm-intro2PE.exe`**.
 

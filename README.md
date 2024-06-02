@@ -867,7 +867,7 @@ You will generally find that the same name patterns are applied to other types o
 
 To create a staged payload, we will use a slightly modified version of the stager code provided by [@mvelazc0](https://github.com/mvelazc0/defcon27_csharp_workshop/blob/master/Labs/lab2/2.cs). The full code of our stager can be obtained here, but is also available in your Windows machine at **`C:\Tools\CS Files\StagedPayload.cs`**:
 
-*Full Payload Code (Click to read)*
+[Full Payload Code](cs%files/T6_EncStageless_cs.md)    *(Click to read)* 
 
 ```bash
 using System;

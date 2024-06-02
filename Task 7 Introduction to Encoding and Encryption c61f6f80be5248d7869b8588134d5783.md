@@ -16,7 +16,7 @@ Similarly, when it comes to AV evasion techniques, encoding is also used to hide
 
 You can also use two or more encoding algorithms in tandem to make it harder for the AV to figure out the hidden content. The following figure shows that we converted the "THM" string into hexadecimal representation and then encoded it using Base64. In this case, you need to make sure that your dropper now handles such encoding to restore the string to its original state.
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/6b3d06034f60f472a3c3620815d25be1.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/6b3d06034f60f472a3c3620815d25be1.png)
+<img src="images/t7_1.png">
 
 # What is Encryption?
 
@@ -26,7 +26,7 @@ Like encoding, encryption techniques are used for various purposes, such as stor
 
 For more information about encryption, we encourage you to check [Encryption - Crypto 101](https://tryhackme.com/room/encryptioncrypto101) room.
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/7cd2d23f048dd314a46910fb29c9836f.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/7cd2d23f048dd314a46910fb29c9836f.png)
+<img src="images/t7_2.png">
 
 # Why do we Need to Know About Encoding and Encryption?
 

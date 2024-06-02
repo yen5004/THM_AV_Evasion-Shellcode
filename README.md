@@ -52,40 +52,21 @@ CHAT GPT:
 
 [Main Take Aways](AV%20Evasion%20Shellcode%20bb784cc3a59d463f856a403c318a4650/Main%20Take%20Aways%2053eb0a1918b2483eb3623b8eb5db7c82.md)
 
-root@ip-10-10-75-113:~# md5sum ted
 abf766d3dc25eeac73e3dc9d0ad40e6e  ted
-root@ip-10-10-75-113:~# md5sum ted.asm
 0387265c30efa8ffca059d2ccfd36601  ted.asm
-root@ip-10-10-75-113:~# md5sum ted.c
 19c14ac23a32a9dfbacd152afccc978c  ted.c
-root@ip-10-10-75-113:~# md5sum ted.o
 f806c50401b76822ff43e7bd396170da  ted.o
-root@ip-10-10-75-113:~# md5sum ted.text
 4eed7e6a2689ac26d5a28e29118c9a5d  ted.text
-
-md5sum tedx
 022e0f8dd805ff5d7bd8da0129d18012  tedx
-
-root@ip-10-10-75-113:~# md5sum eicar
 49cd3e752d8c8ee267113bf88a606081  eicar
-root@ip-10-10-75-113:~# md5sum eicar.asm
 4308ec7669a0e192f0b5ff8f4d70b9cc  eicar.asm
-root@ip-10-10-75-113:~# md5sum eicar.c
 c7a6432fcbe6e7b093670422c7a68b95  eicar.c
-root@ip-10-10-75-113:~# md5sum eicar.o
 fb8ec642f8dcfd7a40e8e3a6db232045  eicar.o
-root@ip-10-10-75-113:~# md5sum eicar.text
 7c5d63293f6a2eb6ba3024bed2b2a7fa  eicar.text
-root@ip-10-10-75-113:~# md5sum eicarx
 ac00021083c43a64432cd3439f8bb03b  eicarx
-
-root@ip-10-10-75-113:~# md5sum calc.c
 a4b79d55944c9c7e1a7e688fdc6d3b88  calc.c
-root@ip-10-10-75-113:~# md5sum calc-MSF.exe
 6bffb2b25cf3cc3c72bbca2b2269e8e2  calc-MSF.exe
-root@ip-10-10-75-113:~# md5sum injector_template
 cf392160516c6d8b5259144d87b92ce5  injector_template
-root@ip-10-10-75-113:~# md5sum injector_template_windows
 e471531524c78f9bd7cc52caf85830b3  injector_template_windows
 
 encXFER.tar.gz.aes
@@ -136,6 +117,8 @@ Points to remember:
 - Once the AV scans the uploaded file and no malicious code is detected, the file gets executed. Thus, if everything is put together correctly, then you should receive a reverse shell.
 
 ![https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/7a5c9d8d5501eaed9d0b677d94266414.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/7a5c9d8d5501eaed9d0b677d94266414.png)
+!https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/7a5c9d8d5501eaed9d0b677d94266414.png
+https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/7a5c9d8d5501eaed9d0b677d94266414.png
 
 You can ignore the questions for this task for now, but be sure to come back to them once you have successfully bypassed the AV and gained a shell.
 

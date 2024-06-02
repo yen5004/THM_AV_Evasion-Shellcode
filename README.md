@@ -1,10 +1,6 @@
 # THM_AV_Evasion-Shellcode
 TryHackMe tutorial on AV Evasion with shellcode
 
-# AV Evasion: Shellcode
-
-# **AV Evasion: Shellcode**
-
 Learn shellcode encoding, packing, binders, and crypters.
 
 LINKS:

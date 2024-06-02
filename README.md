@@ -863,7 +863,7 @@ You will generally find that the same name patterns are applied to other types o
 
 To create a staged payload, we will use a slightly modified version of the stager code provided by [@mvelazc0](https://github.com/mvelazc0/defcon27_csharp_workshop/blob/master/Labs/lab2/2.cs). The full code of our stager can be obtained here, but is also available in your Windows machine at **`C:\Tools\CS Files\StagedPayload.cs`**:
 
-[Full Payload Code](cs%files/T6_EncStageless_cs.md)    *(Click to read)* 
+[Full Payload Code]([cs%files/T6_EncStageless_cs.md](https://github.com/yen5004/THM_AV_Evasion-Shellcode/blob/7629eb9bfe68ab434daf8b00283cd9fb1f52dd41/cs%20files/T6_EncStageless_cs.md#encstagelesscs))    *(Click to read)* 
 
 ```bash
 using System;
@@ -1055,6 +1055,9 @@ NAN
 [Encrypter.cs](Task%206%20Staged%20Payloads%204dd48ff43a2b4d5b9bb1267eb3bed0b0/Encrypter%20cs%20e6323071d156446e99ec07f3698d523f.md)
 
 [EncStageless.cs](Task%206%20Staged%20Payloads%204dd48ff43a2b4d5b9bb1267eb3bed0b0/EncStageless%20cs%20fc0af1e659aa42c68d5a6d688d3f30b4.md)
+(cs files/T6_encrypter_cs2.md)
+(https://github.com/yen5004/THM_AV_Evasion-Shellcode/blob/7629eb9bfe68ab434daf8b00283cd9fb1f52dd41/cs%20files/T6_encrypter_cs2.md)
+
 
 [StagedPayload.cs](Task%206%20Staged%20Payloads%204dd48ff43a2b4d5b9bb1267eb3bed0b0/StagedPayload%20cs%205ddc071e9cc44f538c41e53028f2ba2a.md)
 

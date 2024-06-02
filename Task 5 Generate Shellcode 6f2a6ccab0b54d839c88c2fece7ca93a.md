@@ -109,7 +109,8 @@ This should copy your file in **`C:\Tools\`** in the Windows machine.
 
 While your machine's AV should be disabled, feel free to try and upload your payload to the THM Antivirus Check at **`http://10.10.180.247/`**.
 
-![https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/e90959ae18f71d51d7b8681676029493.png](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d617515c8cd8348d0b4e68f/room-content/e90959ae18f71d51d7b8681676029493.png)
+
+<img src="images/t5_1.png">
 
 The Metasploit framework has many other shellcode formats and types for all your needs. We strongly suggest experimenting more with it and expanding your knowledge by generating different shellcodes.
 

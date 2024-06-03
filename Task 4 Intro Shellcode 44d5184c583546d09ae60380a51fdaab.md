@@ -177,7 +177,8 @@ Assembler and link our code
 ```
 user@AttackBox$ nasm -f elf64 thm.asm
 user@AttackBox$ ld thm.o -o thm
-user@AttackBox$ ./thmTHM,Rocks!
+user@AttackBox$ ./thm
+THM,Rocks!
 ```
 
 ```bash

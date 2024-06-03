@@ -175,7 +175,9 @@ Next, we compile and link the ASM code to create an x64 Linux executable file 
 Assembler and link our code
 
 ```
-user@AttackBox$ nasm -f elf64 thm.asmuser@AttackBox$ ld thm.o -o thmuser@AttackBox$ ./thmTHM,Rocks!
+user@AttackBox$ nasm -f elf64 thm.asm
+user@AttackBox$ ld thm.o -o thm
+user@AttackBox$ ./thmTHM,Rocks!
 ```
 
 ```bash
@@ -195,7 +197,8 @@ Now that we have the compiled ASM program, let's extract the shellcode with the�
 Dump the .text section
 
 ```bash
-user@AttackBox$ objdump -d thmthm:     file format elf64-x86-64
+user@AttackBox$ objdump -d thm
+thm:     file format elf64-x86-64
 
 Disassembly of section .text:
 
@@ -238,7 +241,8 @@ The thm.text contains our shellcode in binary format, so to be able to use it, w
 Output the hex equivalent to our shellcode
 
 ```
-user@AttackBox$ xxd -i thm.textunsigned char new_text[] = {
+user@AttackBox$ xxd -i thm.text
+unsigned char new_text[] = {
   0xeb, 0x1e, 0xb8, 0x01, 0x00, 0x00, 0x00, 0xbf, 0x01, 0x00, 0x00, 0x00,
   0x5e, 0xba, 0x0d, 0x00, 0x00, 0x00, 0x0f, 0x05, 0xb8, 0x3c, 0x00, 0x00,
   0x00, 0xbf, 0x00, 0x00, 0x00, 0x00, 0x0f, 0x05, 0xe8, 0xdd, 0xff, 0xff,
